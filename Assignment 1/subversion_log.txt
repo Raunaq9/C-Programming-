@@ -1,0 +1,219 @@
+URL to view log online:
+https://source.eait.uq.edu.au/viewvc/csse2310-sem2-s4586013/trunk/a1/?view=log
+
+Retrieving logs at Fri Aug 26 17:51:18 AEST 2022
+------------------------------------------------------------------------
+r1 | uqpsutto | 2022-07-27 21:57:55 +1000 (Wed, 27 Jul 2022) | 1 line
+Changed paths:
+   A /play
+   A /prac
+   A /trunk
+   A /trunk/a1
+   A /trunk/a3
+   A /trunk/a4
+
+Initial repository structure
+
+
+------------------------------------------------------------------------
+r3 | s4586013 | 2022-08-09 20:53:09 +1000 (Tue, 09 Aug 2022) | 1 line
+Changed paths:
+   A /trunk/a1/Makefile
+   A /trunk/a1/wordle-helper.c
+
+Initial commit
+
+Index: Makefile
+ Makefile |   12 ++++++++++++
+ 1 file changed, 12 insertions(+)
+Index: wordle-helper.c
+ wordle-helper.c |    1 +
+ 1 file changed, 1 insertion(+)
+
+------------------------------------------------------------------------
+r4 | s4586013 | 2022-08-11 20:15:16 +1000 (Thu, 11 Aug 2022) | 1 line
+Changed paths:
+   M /trunk/a1/wordle-helper.c
+
+Checking usage error
+
+Index: wordle-helper.c
+ wordle-helper.c |   27 ++++++++++++++++++++++++++-
+ 1 file changed, 26 insertions(+), 1 deletion(-)
+
+------------------------------------------------------------------------
+r5 | s4586013 | 2022-08-11 22:18:50 +1000 (Thu, 11 Aug 2022) | 1 line
+Changed paths:
+   M /trunk/a1/wordle-helper.c
+
+Added more error handling functions
+
+Index: wordle-helper.c
+ wordle-helper.c |   19 ++++++++++++++-----
+ 1 file changed, 14 insertions(+), 5 deletions(-)
+
+------------------------------------------------------------------------
+r6 | s4586013 | 2022-08-16 18:56:23 +1000 (Tue, 16 Aug 2022) | 1 line
+Changed paths:
+   M /trunk/a1/wordle-helper.c
+
+Handling alpha and best types in the command line
+
+Index: wordle-helper.c
+ wordle-helper.c |   42 ++++++++++++++++++++++++++++++++++++++----
+ 1 file changed, 38 insertions(+), 4 deletions(-)
+
+------------------------------------------------------------------------
+r7 | s4586013 | 2022-08-16 19:42:01 +1000 (Tue, 16 Aug 2022) | 1 line
+Changed paths:
+   M /trunk/a1/wordle-helper.c
+
+Handling command line errors for length of the word
+
+Index: wordle-helper.c
+ wordle-helper.c |   46 ++++++++++++++++++++++++++++++++++------------
+ 1 file changed, 34 insertions(+), 12 deletions(-)
+
+------------------------------------------------------------------------
+r8 | s4586013 | 2022-08-17 19:31:38 +1000 (Wed, 17 Aug 2022) | 1 line
+Changed paths:
+   M /trunk/a1/wordle-helper.c
+
+Handled command line input and pattern checking along with error handling
+
+Index: wordle-helper.c
+ wordle-helper.c |   57 +++++++++++++++++++++++++++++++++++++++++++++++++++-----
+ 1 file changed, 52 insertions(+), 5 deletions(-)
+
+------------------------------------------------------------------------
+r9 | s4586013 | 2022-08-17 20:04:13 +1000 (Wed, 17 Aug 2022) | 1 line
+Changed paths:
+   M /trunk/a1/wordle-helper.c
+
+Handled file opening or getting environment path
+
+Index: wordle-helper.c
+ wordle-helper.c |   27 ++++++++++++++++++++++-----
+ 1 file changed, 22 insertions(+), 5 deletions(-)
+
+------------------------------------------------------------------------
+r10 | s4586013 | 2022-08-18 19:37:32 +1000 (Thu, 18 Aug 2022) | 1 line
+Changed paths:
+   M /trunk/a1/wordle-helper.c
+
+Checking if words are valid and match in the dictionary and printing them
+
+Index: wordle-helper.c
+ wordle-helper.c |  108 +++++++++++++++++++++++++++++++++++++++++++++++++++++++-
+ 1 file changed, 107 insertions(+), 1 deletion(-)
+
+------------------------------------------------------------------------
+r11 | s4586013 | 2022-08-19 19:35:42 +1000 (Fri, 19 Aug 2022) | 1 line
+Changed paths:
+   M /trunk/a1/wordle-helper.c
+
+Checking if pattern present
+
+Index: wordle-helper.c
+ wordle-helper.c |   48 +++++++++++++++++++++++++++++++++++++++---------
+ 1 file changed, 39 insertions(+), 9 deletions(-)
+
+------------------------------------------------------------------------
+r12 | s4586013 | 2022-08-22 21:48:58 +1000 (Mon, 22 Aug 2022) | 1 line
+Changed paths:
+   M /trunk/a1/wordle-helper.c
+
+Handling with functionality and counting the occurences of the with word
+
+Index: wordle-helper.c
+ wordle-helper.c |   76 +++++++++++++++++++++++++++++++++++++++++++++++---------
+ 1 file changed, 64 insertions(+), 12 deletions(-)
+
+------------------------------------------------------------------------
+r13 | s4586013 | 2022-08-23 17:41:32 +1000 (Tue, 23 Aug 2022) | 1 line
+Changed paths:
+   M /trunk/a1/wordle-helper.c
+
+Handling correct with arguments in different scenarios
+
+Index: wordle-helper.c
+ wordle-helper.c |  296 +++++++++++++++++++++++++++-----------------------------
+ 1 file changed, 146 insertions(+), 150 deletions(-)
+
+------------------------------------------------------------------------
+r14 | s4586013 | 2022-08-23 21:37:27 +1000 (Tue, 23 Aug 2022) | 1 line
+Changed paths:
+   M /trunk/a1/Makefile
+   M /trunk/a1/wordle-helper.c
+
+Fixed with and without bug
+
+Index: Makefile
+ Makefile |    3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+Index: wordle-helper.c
+ wordle-helper.c |   55 +++++++++++++++++++++++++++++++++++++++++++------------
+ 1 file changed, 43 insertions(+), 12 deletions(-)
+
+------------------------------------------------------------------------
+r15 | s4586013 | 2022-08-24 09:32:03 +1000 (Wed, 24 Aug 2022) | 1 line
+Changed paths:
+   M /trunk/a1/wordle-helper.c
+
+Fixed the various_cmd_line_order
+
+Index: wordle-helper.c
+ wordle-helper.c |   38 ++++++++++++++++++++++++++------------
+ 1 file changed, 26 insertions(+), 12 deletions(-)
+
+------------------------------------------------------------------------
+r16 | s4586013 | 2022-08-24 22:41:41 +1000 (Wed, 24 Aug 2022) | 1 line
+Changed paths:
+   M /trunk/a1/wordle-helper.c
+
+Fixed styling errors
+
+Index: wordle-helper.c
+ wordle-helper.c |  285 ++++++++++++++++++++++++++++++++------------------------
+ 1 file changed, 167 insertions(+), 118 deletions(-)
+
+------------------------------------------------------------------------
+r17 | s4586013 | 2022-08-25 23:19:30 +1000 (Thu, 25 Aug 2022) | 1 line
+Changed paths:
+   D /trunk/a1/wordle-helper.c
+   A /trunk/a1/wordleHelper.c (from /trunk/a1/wordle-helper.c:16)
+
+Changed file name according to style convention
+
+Index: wordle-helper.c (deleted)
+Index: wordleHelper.c
+ wordleHelper.c |  433 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 433 insertions(+)
+
+------------------------------------------------------------------------
+r18 | s4586013 | 2022-08-26 13:50:07 +1000 (Fri, 26 Aug 2022) | 1 line
+Changed paths:
+   M /trunk/a1/Makefile
+   M /trunk/a1/wordleHelper.c
+
+Fixed styling error
+
+Index: Makefile
+ Makefile |    8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+Index: wordleHelper.c
+ wordleHelper.c |   70 ++++++++++++++++++++++++++++++++-------------------------
+ 1 file changed, 40 insertions(+), 30 deletions(-)
+
+------------------------------------------------------------------------
+r19 | s4586013 | 2022-08-26 13:55:07 +1000 (Fri, 26 Aug 2022) | 1 line
+Changed paths:
+   M /trunk/a1/wordleHelper.c
+
+Fixed the process file function
+
+Index: wordleHelper.c
+ wordleHelper.c |   24 ++++++++++++------------
+ 1 file changed, 12 insertions(+), 12 deletions(-)
+
+------------------------------------------------------------------------
