@@ -1,0 +1,225 @@
+URL to view log online:
+https://source.eait.uq.edu.au/viewvc/csse2310-sem2-s4586013/trunk/a4/?view=log
+
+Retrieving logs at Fri Nov 4 03:52:15 AEST 2022
+------------------------------------------------------------------------
+r1 | uqpsutto | 2022-07-27 21:57:55 +1000 (Wed, 27 Jul 2022) | 1 line
+Changed paths:
+   A /play
+   A /prac
+   A /trunk
+   A /trunk/a1
+   A /trunk/a3
+   A /trunk/a4
+
+Initial repository structure
+
+
+------------------------------------------------------------------------
+r40 | s4586013 | 2022-10-21 12:37:47 +1000 (Fri, 21 Oct 2022) | 1 line
+Changed paths:
+   A /trunk/a4/Makefile
+
+Added makefile for psclient and psserver program
+
+Index: Makefile
+ Makefile |   22 ++++++++++++++++++++++
+ 1 file changed, 22 insertions(+)
+
+------------------------------------------------------------------------
+r41 | s4586013 | 2022-10-21 12:42:05 +1000 (Fri, 21 Oct 2022) | 1 line
+Changed paths:
+   A /trunk/a4/psclient.c
+   A /trunk/a4/psserver.c
+
+Able to connect to server and exchange messages.
+
+Index: psclient.c
+ psclient.c |   14 ++++++++++++++
+ 1 file changed, 14 insertions(+)
+Index: psserver.c
+ psserver.c |  127 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 127 insertions(+)
+
+------------------------------------------------------------------------
+r42 | s4586013 | 2022-10-25 20:09:16 +1000 (Tue, 25 Oct 2022) | 1 line
+Changed paths:
+   M /trunk/a4/Makefile
+   M /trunk/a4/psclient.c
+
+Added communication protocol
+
+Index: Makefile
+ Makefile |   14 +++++++-------
+ 1 file changed, 7 insertions(+), 7 deletions(-)
+Index: psclient.c
+ psclient.c |    2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+------------------------------------------------------------------------
+r43 | s4586013 | 2022-10-31 19:49:55 +1000 (Mon, 31 Oct 2022) | 1 line
+Changed paths:
+   M /trunk/a4/Makefile
+   M /trunk/a4/psclient.c
+   M /trunk/a4/psserver.c
+
+Added client side basic communication code
+
+Index: Makefile
+ Makefile |   14 +++++++-------
+ 1 file changed, 7 insertions(+), 7 deletions(-)
+Index: psclient.c
+ psclient.c |  148 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-
+ 1 file changed, 146 insertions(+), 2 deletions(-)
+Index: psserver.c
+ psserver.c |  399 ++++++++++++++++++++++++++++++++++++++++++++++---------------
+ 1 file changed, 305 insertions(+), 94 deletions(-)
+
+------------------------------------------------------------------------
+r44 | s4586013 | 2022-11-01 23:31:45 +1000 (Tue, 01 Nov 2022) | 1 line
+Changed paths:
+   M /trunk/a4/Makefile
+   M /trunk/a4/psclient.c
+   M /trunk/a4/psserver.c
+   A /trunk/a4/stringmap.c
+   A /trunk/a4/stringmap.h
+
+Added string map functionality
+
+Index: Makefile
+ Makefile |   20 +++++++++++---------
+ 1 file changed, 11 insertions(+), 9 deletions(-)
+Index: psclient.c
+ psclient.c |    6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+Index: psserver.c
+ psserver.c |   31 ++++++++++++++++++++++++++++++-
+ 1 file changed, 30 insertions(+), 1 deletion(-)
+Index: stringmap.c
+ stringmap.c |  204 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 204 insertions(+)
+Index: stringmap.h
+ stringmap.h |   47 +++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 47 insertions(+)
+
+------------------------------------------------------------------------
+r45 | s4586013 | 2022-11-02 22:47:28 +1000 (Wed, 02 Nov 2022) | 1 line
+Changed paths:
+   M /trunk/a4/psserver.c
+
+Added server functionalities
+
+Index: psserver.c
+ psserver.c |  300 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-
+ 1 file changed, 298 insertions(+), 2 deletions(-)
+
+------------------------------------------------------------------------
+r46 | s4586013 | 2022-11-02 22:57:46 +1000 (Wed, 02 Nov 2022) | 1 line
+Changed paths:
+   M /trunk/a4/psclient.c
+
+Added client functionalities
+
+Index: psclient.c
+ psclient.c |  101 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++--
+ 1 file changed, 98 insertions(+), 3 deletions(-)
+
+------------------------------------------------------------------------
+r47 | s4586013 | 2022-11-03 01:17:23 +1000 (Thu, 03 Nov 2022) | 1 line
+Changed paths:
+   M /trunk/a4/psserver.c
+   M /trunk/a4/stringmap.c
+
+Make file changes and added functionality in psserver
+
+Index: psserver.c
+ psserver.c |   69 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 69 insertions(+)
+Index: stringmap.c
+ stringmap.c |    3 ---
+ 1 file changed, 3 deletions(-)
+
+------------------------------------------------------------------------
+r48 | s4586013 | 2022-11-03 08:48:52 +1000 (Thu, 03 Nov 2022) | 1 line
+Changed paths:
+   M /trunk/a4/psserver.c
+   M /trunk/a4/stringmap.c
+
+Fixed bugs in psclient and psserver.
+
+Index: psserver.c
+ psserver.c |    2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Index: stringmap.c
+ stringmap.c |    3 +++
+ 1 file changed, 3 insertions(+)
+
+------------------------------------------------------------------------
+r49 | s4586013 | 2022-11-03 11:16:28 +1000 (Thu, 03 Nov 2022) | 1 line
+Changed paths:
+   M /trunk/a4/psserver.c
+
+Added signal handling
+
+Index: psserver.c
+ psserver.c |  217 +++++++++++++++++++++++++++++++++++++++++++++----------------
+ 1 file changed, 163 insertions(+), 54 deletions(-)
+
+------------------------------------------------------------------------
+r50 | s4586013 | 2022-11-03 15:29:39 +1000 (Thu, 03 Nov 2022) | 1 line
+Changed paths:
+   M /trunk/a4/psserver.c
+   M /trunk/a4/stringmap.c
+
+Fixed bugs in stringmap.c
+
+Index: psserver.c
+ psserver.c |  208 +++++++++++++++++++++++++++++--------------------------------
+ 1 file changed, 102 insertions(+), 106 deletions(-)
+Index: stringmap.c
+ stringmap.c |    6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+------------------------------------------------------------------------
+r51 | s4586013 | 2022-11-03 19:14:01 +1000 (Thu, 03 Nov 2022) | 1 line
+Changed paths:
+   M /trunk/a4/psclient.c
+   M /trunk/a4/psserver.c
+
+Fixed bugs in psserver and psclient
+
+Index: psclient.c
+ psclient.c |    2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Index: psserver.c
+ psserver.c |   74 ++++++++++++++++++++++++++++++++++++++++++++++++++-----------
+ 1 file changed, 61 insertions(+), 13 deletions(-)
+
+------------------------------------------------------------------------
+r52 | s4586013 | 2022-11-04 03:32:54 +1000 (Fri, 04 Nov 2022) | 1 line
+Changed paths:
+   M /trunk/a4/Makefile
+   M /trunk/a4/psclient.c
+   M /trunk/a4/psserver.c
+   M /trunk/a4/stringmap.c
+   M /trunk/a4/stringmap.h
+
+Fixed issues with makefile and fixed bugs in compilation of stringmap.c
+
+Index: Makefile
+ Makefile |   23 ++++++++++++++---------
+ 1 file changed, 14 insertions(+), 9 deletions(-)
+Index: psclient.c
+ psclient.c |  259 +++++++++++++++++++++++++++++++------------------------------
+ 1 file changed, 133 insertions(+), 126 deletions(-)
+Index: psserver.c
+ psserver.c | 1039 ++++++++++++++++++++++++++++---------------------------------
+ 1 file changed, 483 insertions(+), 556 deletions(-)
+Index: stringmap.c
+ stringmap.c |  285 +++++++++++++++++++++++++++---------------------------------
+ 1 file changed, 132 insertions(+), 153 deletions(-)
+Index: stringmap.h
+ stringmap.h |   23 ++++++++++++-----------
+ 1 file changed, 12 insertions(+), 11 deletions(-)
+
+------------------------------------------------------------------------
